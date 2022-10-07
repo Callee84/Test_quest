@@ -469,40 +469,58 @@ def the_talk():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("The guard seems to be in a good mood today and let you pass.")
+        sleep(1)
         print("But before he let you go, he gave you a knife and told you")
+        sleep(1)
         print("-'Stay away from the beach. It's dangerous!'")
+        sleep(1)
         print("Well past the brigde you look to your left and see a (beach)")
+        sleep(1)
         print("and to your right you see a (forest).")
+        sleep(1)
         talk_choice = input("Where do you go? \n").lower()
 
         if talk_choice == "beach":
+            sleep(1)
             talk_beach()
 
         elif talk_choice == "forest":
+            sleep(1)
             forest()
 
         else:
             print("Remember, the options you have are inside (brackets).")
+            sleep(1)
             continue
 
 
 def sneak():
     while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("Nice call... You were able to sneak past the guard.")
+        sleep(1)
         print("You were able to dodge the guard and sneek over to the other side.")
+        sleep(1)
         print("If you look to the right it's a nice (beach)")
+        sleep(1)
         print("and to your left there is a (forest).")
 
         if choiceOne == "beach":
+            sleep(1)
             sneak_beach()
 
         elif choiceOne == "forest":
+            sleep(1)
             sneak_forest()
 
         else:
+            sleep(1)
             print("That's not an option.")
+            sleep(1)
             print("Remember, the options you have are inside (brackets).")
             continue
 
@@ -510,20 +528,27 @@ def sneak():
 # Start of the quest
 
 while True:
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
     print("")
+    sleep(1)
     print("You come to a river. There's a man guarding the only bridge.")
+    sleep(2)
     print(("He looks quite big and almost dangeorus from this far out."))
+    sleep(2)
     choiceOne = input(
         "Do you (talk) to the guard or du you try to (sneak) past? \n").lower()
 
     if choiceOne == "talk":
+        sleep(1)
         the_talk()
 
     elif choiceOne == "sneak":
+        sleep(1)
         sneak()
 
     else:
         print("That's not an option.")
+        sleep(1)
         print("Remember, the options you have are inside (brackets).")
         continue
 
