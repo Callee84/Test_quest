@@ -207,6 +207,7 @@ def end():
     sleep(2)
     print("Well, play again and see where the quest will take you this time...")
 
+
 def home():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -380,7 +381,21 @@ def pick():
         sleep(1)
         print("Do you (fight) him of with your knife,")
         sleep(1)
-        choiceForestTwo = input("or du you try to (lure) him of with some mushrooms?\n").lower()
+        talk_forest_pick = input("or du you try to (lure) him of with some mushrooms?\n").lower()
+
+        if talk_forest_pick == fight:
+            sleep(1)
+            forest_fight()
+        
+        elif talk_forest_pick == lure:
+            sleep(1)
+            lure()
+
+        else:
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(2)
+            print("Please type you choice of answer or check your spelling...")
+            continue
 
 
 def forest():
@@ -461,6 +476,56 @@ def talk_beach():
             continue
 
 
+def sneak_forest_fight():
+    while True:
+
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print("You don't stand a chance against the hungry wolf who eats you,")
+        sleep(1)
+        print("and the mushrooms in seconds...")
+        sleep(2)
+        print("The End....")
+        sleep(1)
+        end()
+
+
+def sneak_pick():
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print(
+        "You picked up the mushrooms and start to walk to the edge of the forest")
+        sleep(1)
+        print("When you reach the edge you see a bench overlooking a fantastic view.")
+        sleep(1)
+        print("You decide to sit down for a while")
+        sleep(1)
+        print("and just when you are about eat some of your mushrooms")
+        sleep(1)
+        print("you see a hungry, angry wolf.")
+        sleep(1)
+        print("Do you (fight) him of,")
+        sleep(1)
+        sneak_forest_pick = input("or du you try to (lure) him of with some mushrooms?\n").lower()
+
+        if sneak_forest_pick == fight:
+            sleep(1)
+            sneak_forest_fight()
+        
+        elif sneak_forest_pick == lure:
+            sleep(1)
+            lure()
+
+        else:
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(2)
+            print("Please type you choice of answer or check your spelling...")
+            continue
+
+
 def sneak_beach():
 
     while True:
@@ -504,7 +569,36 @@ def sneak_beach():
             print("Remember, the options you have are inside (brackets).")
             continue
 
+
 def sneak_forest():
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print("You reach the forest and you come across some mushrooms.")
+        sleep(1)
+        print("You don't know if these mushrooms are poisones or not")
+        sleep(1)
+        print("But you are quite hungry after you little walk.")
+        sleep(1)
+        choice_forest = input(
+            "Do you (pick) them up or do you (leave) them?\n").lower()
+
+        if choice_forest == "pick":
+            sleep(1)
+            sneak_pick()
+
+
+        elif choice_forest == "leave":
+            sleep(1)
+            sneak_leave()
+
+        else:
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(1)
+            print("Please type you choice of answer or check your spelling...")
+            continue
+
 
 def the_talk():
 
