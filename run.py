@@ -137,7 +137,7 @@ print("Welcome", name, "!\n")
 sleep(1)
 
 
-print("This is the tale about a exiting journey across the mythical lands of")
+print("This is the tale about an exiting journey across the mythical lands of")
 sleep(2)
 print("'PythWorld'.")
 sleep(2)
@@ -184,11 +184,28 @@ while True:
         print("who is provided for you in (bracets)")
         sleep(1)
         print("You only get this warning. Fail this inside the quest and you lose!")
-        sleep(1)
+        sleep(2)
+        print("Well okey, maybe not lose... But I will be a bit sad....")
         continue
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 
+
+def end():
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+    print("")
+    sleep(1)
+    print("So, how did you do?")
+    sleep(2)
+    print("Did you have to answer some hard questions?")
+    sleep(2)
+    print("Did you get the treasure?")
+    sleep(2)
+    print("Or did you even became a god?")
+    sleep(2)
+    print("Maybe you wish you've picked some other answers?")
+    sleep(2)
+    print("Well, play again and see where the quest will take you this time...")
 
 def home():
     while True:
@@ -277,7 +294,6 @@ def forest_fight():
             continue
 
 
-
 def run():
     print("Oh no....")
     sleep(2)
@@ -290,6 +306,7 @@ def run():
 
 
 def leave():
+
     while True:
 
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -322,6 +339,29 @@ def leave():
             print("Please type you choice of answer or check your spelling...")
             continue
 
+
+def lure():
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print("The wolf looks at you with his angry eyes.")
+        sleep(1)
+        print("Just when he's about to attack you he sees the mushrooms")
+        sleep(1)
+        print("You're in luck, the wolf likes the mushrooms and start eating.")
+        sleep(1)
+        print("You sneak away and find you way back to the bridge.")
+        sleep(1)
+        print("The guard however, is not there. So you walk over the bridge.")
+        sleep(1)
+        print("And stroll down the road to you house.")
+        sleep(1)
+        print("The End...")
+        sleep(1)
+        end()
+
+
 def pick():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -341,6 +381,7 @@ def pick():
         print("Do you (fight) him of with your knife,")
         sleep(1)
         choiceForestTwo = input("or du you try to (lure) him of with some mushrooms?\n").lower()
+
 
 def forest():
     while True:
@@ -463,6 +504,7 @@ def sneak_beach():
             print("Remember, the options you have are inside (brackets).")
             continue
 
+def sneak_forest():
 
 def the_talk():
 
@@ -552,26 +594,6 @@ while True:
         print("Remember, the options you have are inside (brackets).")
         continue
 
-
-#             elif choiceForestTwo == "lure":
-#                 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-#                 print("")
-
-#         elif choiceForestOne == "leave":
-
-
-# # Sneak - Choice one
-
-# elif choiceOne == "sneak":
-
-
-#     # Sneak - Choice two
-
-#     choiceTwoTwo = input("Where do you go? ").lower()
-
-
-# else:
-#     raise ValueError("Nope, that's not an option! Try again")
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("")
