@@ -322,36 +322,53 @@ def leave():
             print("Please type you choice of answer or check your spelling...")
             continue
 
+def pick():
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print(
+        "You picked up the mushrooms and start to walk to the edge of the forest")
+        sleep(1)
+        print("When you reach the edge you see a bench overlooking a fantastic view.")
+        sleep(1)
+        print("You decide to sit down for a while")
+        sleep(1)
+        print("and just when you are about eat some of your mushrooms")
+        sleep(1)
+        print("you see a hungry, angry wolf.")
+        sleep(1)
+        print("Do you (fight) him of with your knife,")
+        sleep(1)
+        choiceForestTwo = input("or du you try to (lure) him of with some mushrooms?\n").lower()
 
 def forest():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("You reach the forest and you come across some mushrooms.")
+        sleep(1)
         print("You don't know if these mushrooms are poisones or not")
+        sleep(1)
         print("But you are quite hungry after you little walk.")
+        sleep(1)
         choice_forest = input(
             "Do you (pick) them up or do you (leave) them?\n").lower()
 
         if choice_forest == "pick":
+            sleep(1)
             pick()
-            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-            print("")
-            print(
-                "You picked up the mushrooms and start to walk to the edge of the forest")
-            print("When you reach the edge you see a bench overlooking a fantastic view.")
-            print("You decide to sit down for a while")
-            print("and just when you are about eat some of your mushrooms")
-            print("you see a hungry, angry wolf.")
-            print("Do you (fight) him of with your knife,")
-            choiceForestTwo = input(
-                "or du you try to (lure) him of with some mushrooms?\n").lower()
+
 
         elif choice_forest == "leave":
+            sleep(1)
             leave()
 
         else:
-            print("Remember, the options you hav are inside (brackets).")
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(1)
+            print("Please type you choice of answer or check your spelling...")
             continue
 
 
@@ -359,53 +376,86 @@ def talk_beach():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("You get to the lovely beach and see a the back of a man.  ")
+        sleep(1)
         print("You say 'Hey mister, what a lovely day', the man turns around and...")
+        sleep(1)
         print("IT'S DEATH HIMSELF!!! He says, ")
+        sleep(1)
         print("-'I've been waiting for you.")
+        sleep(1)
         print("But since it's such a lovely day as you say it is,")
+        sleep(1)
         print("I will give you a second chance on life. ")
+        sleep(1)
         print("Just guess this five letter word.' ")
+        sleep(1)
         beach_choice = input("Are you ready? (Yes) or (no) \n").lower()
 
         if beach_choice == "yes":
+            sleep(2)
             hangman()
 
         elif beach_choice == "no":
+            sleep(2)
             print("Death says")
+            sleep(1)
             print("-'Well then. I'm glad! You have accepted your faith.")
+            sleep(2)
             print("From here on out you shall be known as",
                   name, "God of the fearless!'")
+            sleep(2)
             print("Come with me and take you place among the gods of Pythworld")
+            sleep(2)
             print("Your throne and you people hs been waiting for you, for a long time.")
-            break
+            sleep(2)
+            print("The End")
+            end()
 
         else:
-            print("Remember, the options you have are inside (brackets).")
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(2)
+            print("Please type you choice of answer or check your spelling...")
             continue
 
 
 def sneak_beach():
 
     while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("You get to the lovely beach and see a the back of a man.  ")
+        sleep(1)
         print("You say 'Hey mister, what a lovely day', the man turns around and...")
+        sleep(2)
         print("IT'S DEATH HIMSELF!!! He says, ")
+        sleep(2)
         print("-'I've been waiting for you.")
+        sleep(2)
         print("But since it's such a lovely day as you say it is,")
+        sleep(2)
         print("I will give you a second chance on life. ")
+        sleep(2)
         print("Just answer these five simple questions. ")
+        sleep(2)
         print("If you get 4 answers right, I let you go free.")
+        sleep(2)
         print("If not, you come with me. '")
+        sleep(2)
         choice_sneak_beach = input("Are you ready? (Yes) or (no)").lower()
 
         if _choice_sneak_beach == "yes":
+            sleep(2)
             quiz()
 
         elif choice_sneak_beach == "no":
+            sleep(1)
             print("Well then.. A smart choice. I wouldn't have let you go either way.")
+            sleep(1)
             print("")
+            sleep(1)
             print("Or would I.....?")
             end()
 
@@ -500,9 +550,16 @@ while True:
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("")
+sleep(1)
 print("So, how did you do?")
+sleep(2)
 print("Did you have to answer some hard questions?")
+sleep(2)
 print("Did you get the treasure?")
-print("Or did you even get to be a god?")
+sleep(2)
+print("Or did you even became a god?")
+sleep(2)
 print("Maybe you wish you've picked some other answers?")
+sleep(2)
 print("Well, play again and see where the quest will take you this time...")
+
