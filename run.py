@@ -194,26 +194,42 @@ def home():
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("You start you journey home again.")
+        sleep(1)
         print("With a lot of pain but even more will,")
+        sleep(1)
         print("you manage to walk through the forest.")
+        sleep(1)
         print("After a while you meet someone familiar -")
+        sleep(1)
         print("the guard from the bidge. He asks")
+        sleep(1)
         print("-'Do you still have my knife?")
+        sleep(1)
         choice_home = input("(Yes or (no)?\n").lower()
+        sleep(1)
 
         if choice_home == "yes":
+            sleep(1)
             print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-            print("")
+            print(""
+            sleep(1))
             print("The guard says 'You passed the test. As a reward you have earned")
+            sleep(1)
             print(
                 "this treasure! Follow this path back and you'll be back home in notime!")
+                sleep(2)
             end()
 
         elif choice_home == "no":
+            sleep(1)
             print("Oh well... Hope it come to god use for you.")
+            sleep(1)
             print("Just follow this path and you will be home before you know it.")
+            sleep(1)
             print("All the best!")
+            sleep(2)
             end()
 
 
@@ -222,31 +238,54 @@ def forest_fight():
 
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("After a long fight you manage to fight of the wolf.")
+        sleep(1)
         print("But you have sustained injuries.")
+        sleep(1)
         print("You try to walk but it hurts.")
+        sleep(1)
         choice_forest_fight = input(
             "Do you go (home) or du you continue the (quest)?\n").lower()
+            sleep(1)
 
         if choice_forest_fight == home:
+            sleep(1)
             home()
 
         elif choice_forest_fight == quest:
             print(
                 "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             print("")
+            sleep(1)
             print("Oh no! Your injuries is really taking it's toll")
+            sleep(1)
             print("You try to go on...")
+            sleep(1)
             print("You see a man appears out of nowhere. He says")
+            sleep(1)
             print("-'Hello", name, "'I'm death. It's time to come with me..")
+            sleep(2)
             print("The End.....")
+            sleep(2)
             end()
+
+        else:
+            print("No, no, NO! Remember the (brackets)?")
+            sleep(2)
+            print("Please type you choice of answer or check your spelling...")
+            continue
+
 
 
 def run():
     print("Oh no....")
+    sleep(2)
     print("It was a long and hard fight...")
-    print("Well, not really. The wolf killed you within seconds.")
+    sleep(1)
+    print("Well, not really. The wolf ate you within seconds.")
+    sleep(2)
+    print("The End...")
     end()
 
 
@@ -255,22 +294,31 @@ def leave():
 
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
+        sleep(1)
         print("You ignore the mushrooms and star walking.")
+        sleep(1)
         print(
             "After a while you notice that you're on a path you never been on before.")
+            sleep(1)
         print("Just when you manage to find the edge of the forest you see a wolf.")
+        sleep(1)
         print("The wolf is hungry and angry. He attacks you!")
+        sleep(1)
         choice_wolf = input(
             "Do you (fight) him of with your knife or do you (run)?")
+            
 
         if choice_wolf == "fight":
+            sleep(1)
             forest_fight()
 
         elif choice_wolf == run:
+            sleep(1)
             run()
 
         else:
             print("No, no, NO! Remember the (brackets)?")
+            sleep(2)
             print("Please type you choice of answer or check your spelling...")
             continue
 
