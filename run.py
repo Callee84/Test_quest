@@ -89,7 +89,7 @@ def quiz():
         print("The answer is 4.")
 
     answerTwo = input("What's more, 5 ants or 4 elephants? ").lower()
-    if answer == "5 ants" or "5" or "ants":
+    if answerTwo == "5 ants" or "5" or "ants":
         print("Correct, but that wheren't a hard question! ")
         score += 1
     else:
@@ -98,7 +98,7 @@ def quiz():
 
     answerThree = input(
         "What was to the left of the bridge you just passed?\n").lower()
-    if answer == "beach":
+    if answerThree == "beach":
         print("Okey, that's right. But here comes some harder questions! ")
         score += 1
     else:
@@ -108,7 +108,7 @@ def quiz():
     print("I hope you know you Lord of the rings...")
     answerFour = input(
         "What was the name of the hobbit who took the ring to Mordor? ").lower()
-    if answer == "frodo":
+    if answerFour == "frodo":
         print("Hmmm, still easy questions. Don't get cocky!")
         score += 1
     else:
@@ -117,7 +117,7 @@ def quiz():
 
     answerFive = input(
         "Last question. A simple one... Who's the best? ").lower()
-    if answer == "You" or "Me":
+    if answerFive == "You" or "Me":
         print("Yeah, Okey... You beat me. I guess you do got some skill. ")
         score += 1
     else:
