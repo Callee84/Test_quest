@@ -231,13 +231,13 @@ def home():
         if choice_home == "yes":
             sleep(1)
             print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-            print(""
-            sleep(1))
+            print("")
+            sleep(1)
             print("The guard says 'You passed the test. As a reward you have earned")
             sleep(1)
             print(
                 "this treasure! Follow this path back and you'll be back home in notime!")
-                sleep(2)
+            sleep(2)
             end()
 
         elif choice_home == "no":
@@ -265,7 +265,7 @@ def forest_fight():
         sleep(1)
         choice_forest_fight = input(
             "Do you go (home) or du you continue the (quest)?\n").lower()
-            sleep(1)
+        sleep(1)
 
         if choice_forest_fight == home:
             sleep(1)
@@ -317,7 +317,7 @@ def leave():
         sleep(1)
         print(
             "After a while you notice that you're on a path you never been on before.")
-            sleep(1)
+        sleep(1)
         print("Just when you manage to find the edge of the forest you see a wolf.")
         sleep(1)
         print("The wolf is hungry and angry. He attacks you!")
