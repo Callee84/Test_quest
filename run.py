@@ -253,6 +253,21 @@ def home():
             end()
 
 
+def quest():
+    print("You start to feel better for a while.")
+    sleep(1)
+    print("But slowly, as the sun sets,")
+    sleep(1)
+    print("you start feeling worse and worse.")
+    sleep(1)
+    print("You are lost and without food.")
+    sleep(1)
+    print("You lie down and close your eyes....")
+    sleep(2)
+    print("The End...")
+    end()
+
+
 def forest_fight():
     while True:
 
