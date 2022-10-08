@@ -1,7 +1,7 @@
 import random
 import images
 from time import sleep
-
+import os
 
 
 # defining the quiz for use under - Sneak - beach
@@ -13,65 +13,125 @@ def quiz():
     """
 
     print("Welcome then, to my impossible quiz....")
+    sleep(1)
 
-    playing = input("Do you feel like you can beat me? ")
+    playing = input("Do you feel like you can beat me?\n ")
+    sleep(1)
 
     if playing.lower() != "yes":
         quit()
 
     print("Okey then....")
+    sleep(1)
     print("But don't come crying to me when you fail....")
+    sleep(1)
 
     # To keep the right answers from user
 
     score = 0
 
     # Questions
-
-    answer = input("Let's start up with an easy one...  What's 2 + 2? ")
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+    answer = input("Let's start up with an easy one...  What's 2 + 2?\n ")
+    sleep(2)
     if answer == "4":
+        print("")
         print("Well done! There's some hope after all... ")
         score += 1
     else:
+        print("")
         print("Ha! And you thougth you could beat me?")
+        sleep(1)
         print("The answer is 4.")
-
-    answerTwo = input("What's more, 5 ants or 4 elephants? ").lower()
+    sleep(1)
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+    
+    answerTwo = input("What's more, 5 ants or 4 elephants? \n").lower()
+    sleep(2)
     if answerTwo == "5 ants" or "5" or "ants":
+        print("")
         print("Correct, but that wheren't a hard question! ")
         score += 1
     else:
+        print("")
         print("Nope, you had a 50% chance and still got it wrong!")
+        sleep(1)
         print("The answer was 5 ants.")
-
+    sleep(1)
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+    
     answerThree = input(
         "What was to the left of the bridge you just passed?\n").lower()
+    sleep(2)
     if answerThree == "beach":
+        print("")
         print("Okey, that's right. But here comes some harder questions! ")
         score += 1
     else:
+        print("")
         print("Nope. You're just a lot of talk huh? Not that smart?")
+        sleep(1)
         print("The answer was this beach.")
 
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
     print("I hope you know you Lord of the rings...")
+    sleep(1)
+
     answerFour = input(
-        "What was the name of the hobbit who took the ring to Mordor? ").lower()
+        "What was the name of the hobbit who took the ring to Mordor? \n").lower()
     if answerFour == "frodo":
+        print("")
         print("Hmmm, still easy questions. Don't get cocky!")
         score += 1
     else:
+        print("")
         print("Nope! Well, unleast you're pretty... ")
         print("The answer was Frodo.")
-
+    sleep(1)
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+    
     answerFive = input(
-        "Last question. A simple one... Who's the best? ").lower()
+        "Last question. A simple one... Who's the best?\n ").lower()
+    sleep(2)
     if answerFive == "You" or "Me":
-        print("Yeah, Okey... You beat me. I guess you do got some skill. ")
+        print("")
+        print("I'm going to take your answer as you mean me...")
+        sleep(2)
+        print("And of course that's right!")
         score += 1
     else:
-        print("So close to beating me. But I was never worried. I'm the best!")
+        print("")
+        print("What!? NO! The answer is me! I'm the best!")
+        sleep(2)
 
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+    print("")
     print("Well, you got " + str(score) + " questions right!")
+
+    if score >= 4:
+        print("Okey, you got some skill")
+        sleep(2)
+        print("But since I'm me and it's my game...")
+        sleep(2)
+        print("You still have to come with me!")
+        sleep(2)
+        print("I don't cheat! I just changed the rules...")
+        sleep(2)
+        print("Just like you when you sneaked past my guard at the bridge...")
+        sleep(2)
+        print("The End....")
+        sleep(2)
+
+    else:
+        print("As I thought... ")
+        sleep(2)
+        print("Not much to say.")
+        sleep(2)
+        print("Just come with me.")
+        sleep(2)
+        print("The End...")
+        sleep(2)
+    
 
 
 print("Welcome to the Quest!\n")
@@ -134,6 +194,7 @@ def hangman(letter, word):
 
 
 def status():
+    os.system("clear")
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
     sleep(1)
@@ -174,7 +235,7 @@ else:
     sleep(2)
     print("Well... only one way to find out I guess...")
     sleep(2)
-    print("On you go! God luck",name,"!")
+    print("On you go! God luck", name, "!")
     sleep(2)
     print("By the way, the world I was looking for was", word)
     sleep(2)
@@ -209,7 +270,6 @@ sleep(2)
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("")
 sleep(2)
-
 
 
 while True:
@@ -247,9 +307,6 @@ while True:
         sleep(1)
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         continue
-
-
-
 
 
 def end():
@@ -399,8 +456,7 @@ def leave():
         print("The wolf is hungry and angry. He attacks you!")
         sleep(1)
         choice_wolf = input(
-            "Do you (fight) him of with your knife or do you (run)?")
-            
+            "Do you (fight) him of with your knife or do you (run)?") 
 
         if choice_wolf == "fight":
             sleep(1)
@@ -491,7 +547,6 @@ def forest():
         if choice_forest == "pick":
             sleep(1)
             pick()
-
 
         elif choice_forest == "leave":
             sleep(1)
