@@ -652,11 +652,11 @@ def sneak_pick():
         sleep(1)
         sneak_forest_pick = input("or du you try to (lure) him of with some mushrooms?\n").lower()
 
-        if sneak_forest_pick == fight:
+        if sneak_forest_pick == "fight":
             sleep(1)
             sneak_forest_fight()
         
-        elif sneak_forest_pick == lure:
+        elif sneak_forest_pick == "lure":
             sleep(1)
             lure()
 
