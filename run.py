@@ -524,11 +524,11 @@ def pick():
         sleep(1)
         talk_forest_pick = input("or du you try to (lure) him of with some mushrooms?\n").lower()
 
-        if talk_forest_pick == fight:
+        if talk_forest_pick == "fight":
             sleep(1)
             forest_fight()
         
-        elif talk_forest_pick == lure:
+        elif talk_forest_pick == "lure":
             sleep(1)
             lure()
 
