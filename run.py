@@ -45,7 +45,7 @@ def quiz():
         print("The answer is 4.")
     sleep(1)
     print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
-    
+
     answerTwo = input("What's more, 5 ants or 4 elephants? \n").lower()
     sleep(2)
     if answerTwo == "5 ants" or "5" or "ants":
@@ -132,9 +132,7 @@ def quiz():
         sleep(2)
         print("The End...")
         sleep(2)
-        end()
-    
-
+        end()    
 
 print("Welcome to the Quest!\n")
 sleep(2)
@@ -153,99 +151,99 @@ while True:
     else:
         break
 
-# sleep(1)
-# print("First of all", name, ", I must test your mind")
-# sleep(2)
-# print("before I can let you pass through.")
-# sleep(2)
-# print("It's an easy test...")
-# sleep(2)
-# print("All you have to do i guess this simple word.")
-# sleep(2)
-# print("It's only five letters...")
-# sleep(2)
-# print("And since I'm such a nice guy, I will let you have 7 guesses...")
-# sleep(2)
-# print("Good Luck!")
+sleep(1)
+print("First of all", name, ", I must test your mind")
+sleep(2)
+print("before I can let you pass through.")
+sleep(2)
+print("It's an easy test...")
+sleep(2)
+print("All you have to do i guess this simple word.")
+sleep(2)
+print("It's only five letters...")
+sleep(2)
+print("And since I'm such a nice guy, I will let you have 7 guesses...")
+sleep(2)
+print("Good Luck!")
 
 
-# words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
-# word = random.choice(words)
-# word = word.upper()
-# show_word = list(len(word)*'_')
-# guesses = 7
-# survive = False
+words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
+word = random.choice(words)
+word = word.upper()
+show_word = list(len(word)*'_')
+guesses = 7
+survive = False
 
 
-# def hangman(letter, word):
-#     """
-#     Function Hangman game to be called at - The talk - beach
-#     The game should pick a random word from 'words' list.
-#     And the user has 7 guesses to get it right.
-#     """
+def hangman(letter, word):
+    """
+    Function Hangman game to be called at - The talk - beach
+    The game should pick a random word from 'words' list.
+    And the user has 7 guesses to get it right.
+    """
 
-#     global show_word
-#     for i in range(0, len(word)):
-#         letter = word[i]
-#         if guess == letter:
-#             show_word[i] = guess
-#     if '_' not in show_word:
-#         return True
-#     else:
-#         return False
-
-
-# def status():
-#     os.system("clear")
-#     print(images.hangman_stages[7-guesses])
-#     print(' '.join([str(e) for e in show_word]))
-#     sleep(1)
-#     print('You have', guesses, 'guess left...')
-#     print("")
+    global show_word
+    for i in range(0, len(word)):
+        letter = word[i]
+        if guess == letter:
+            show_word[i] = guess
+    if '_' not in show_word:
+        return True
+    else:
+        return False
 
 
-# while survive == False and guesses > 0:
-#     status()
-#     guess = input("You can guess a letter or the entire word:\n")
-#     guess = guess.upper()
+def status():
+    os.system("clear")
+    print(images.hangman_stages[7-guesses])
+    print(' '.join([str(e) for e in show_word]))
+    sleep(1)
+    print('You have', guesses, 'guess left...')
+    print("")
 
-#     if guess == word:
-#         survive = True
-#         show_word = word
-#     elif len(guess) == 1 and guess in word:
-#         survive = hangman(guess, word)
-#     else:
-#         guesses -= 1
-#     status()
 
-# if survive:
-#     print("Well done!")
-#     sleep(1)
-#     print("I feel confident that you might stand a chance in")
-#     sleep(2)
-#     print("the upcoming adventure...")
-#     sleep(2)
-#     print("Here we go!")
-#     sleep(2)
-#     print("")
-# else:
-    # print("That's all your guesses...")
-    # sleep(2)
-    # print("Hmmm, if you can't guess a five letter word,")
-    # sleep(2)
-    # print("How are going to make it on this impossible andventure?")
-    # sleep(2)
-    # print("Well... only one way to find out I guess...")
-    # sleep(2)
-    # print("On you go! God luck", name, "!")
-    # sleep(2)
-    # print("By the way, the world I was looking for was", word)
-    # sleep(2)
-    # print("Soooooo easy...!")
-    # sleep(1)
-    # print("Anyway, here we go!")
-    # sleep(2)
-    # print("")
+while survive == False and guesses > 0:
+    status()
+    guess = input("You can guess a letter or the entire word:\n")
+    guess = guess.upper()
+
+    if guess == word:
+        survive = True
+        show_word = word
+    elif len(guess) == 1 and guess in word:
+        survive = hangman(guess, word)
+    else:
+        guesses -= 1
+    status()
+
+if survive:
+    print("Well done!")
+    sleep(1)
+    print("I feel confident that you might stand a chance in")
+    sleep(2)
+    print("the upcoming adventure...")
+    sleep(2)
+    print("Here we go!")
+    sleep(2)
+    print("")
+else:
+    print("That's all your guesses...")
+    sleep(2)
+    print("Hmmm, if you can't guess a five letter word,")
+    sleep(2)
+    print("How are going to make it on this impossible andventure?")
+    sleep(2)
+    print("Well... only one way to find out I guess...")
+    sleep(2)
+    print("On you go! God luck", name, "!")
+    sleep(2)
+    print("By the way, the world I was looking for was", word)
+    sleep(2)
+    print("Soooooo easy...!")
+    sleep(1)
+    print("Anyway, here we go!")
+    sleep(2)
+    print("")
      
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -330,6 +328,7 @@ def end():
         sleep(2)
         print("Well, play again and see where the quest will take you this time...")
         break
+
 
 def home():
     while True:
@@ -592,7 +591,7 @@ def talk_beach():
 
         if beach_choice == "yes":
             sleep(2)
-            hangman()
+            quiz()
 
         elif beach_choice == "no":
             sleep(2)
@@ -754,7 +753,6 @@ def sneak_forest():
             sleep(1)
             sneak_pick()
 
-
         elif choice_forest_sneak == "leave":
             sleep(1)
             sneak_leave()
@@ -811,7 +809,6 @@ def sneak():
         sleep(1)
         print("and to your left there is a (forest).")
         choice_sneak = input("Where do you go from here?\n")
-        
 
         if choice_sneak == "beach":
             sleep(1)
