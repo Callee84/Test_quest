@@ -634,15 +634,15 @@ def sneak_forest():
         sleep(1)
         print("But you are quite hungry after you little walk.")
         sleep(1)
-        choice_forest = input(
+        choice_forest_sneak = input(
             "Do you (pick) them up or do you (leave) them?\n").lower()
 
-        if choice_forest == "pick":
+        if choice_forest_sneak == "pick":
             sleep(1)
             sneak_pick()
 
 
-        elif choice_forest == "leave":
+        elif choice_forest_sneak == "leave":
             sleep(1)
             sneak_leave()
 
@@ -690,14 +690,14 @@ def sneak():
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
-        print("Nice call... You were able to sneak past the guard.")
+        print("Nice call... )
         sleep(1)
         print("You were able to dodge the guard and sneek over to the other side.")
         sleep(1)
         print("If you look to the right it's a nice (beach)")
         sleep(1)
         print("and to your left there is a (forest).")
-        choice_sneak = input("Where do you go from here?")
+        choice_sneak = input("Where do you go from here?\n")
         
 
         if choice_sneak == "beach":
@@ -709,10 +709,13 @@ def sneak():
             sneak_forest()
 
         else:
+            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             sleep(1)
             print("That's not an option.")
             sleep(1)
             print("Remember, the options you have are inside (brackets).")
+            sleep(1)
+            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             continue
 
 
