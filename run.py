@@ -235,7 +235,7 @@ else:
     sleep(2)
     print("Well... only one way to find out I guess...")
     sleep(2)
-    print("On you go! God luck", name, "!")
+    print("On you go! Good luck", name, "!")
     sleep(2)
     print("By the way, the world I was looking for was", word)
     sleep(2)
