@@ -314,21 +314,22 @@ while True:
 
 
 def end():
-    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-    print("")
-    sleep(1)
-    print("So, how did you do?")
-    sleep(2)
-    print("Did you have to answer some hard questions?")
-    sleep(2)
-    print("Did you get the treasure?")
-    sleep(2)
-    print("Or did you even became a god?")
-    sleep(2)
-    print("Maybe you wish you've picked some other answers?")
-    sleep(2)
-    print("Well, play again and see where the quest will take you this time...")
-
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print("So, how did you do?")
+        sleep(2)
+        print("Did you have to answer some hard questions?")
+        sleep(2)
+        print("Did you get the treasure?")
+        sleep(2)
+        print("Or did you even became a god?")
+        sleep(2)
+        print("Maybe you wish you've picked some other answers?")
+        sleep(2)
+        print("Well, play again and see where the quest will take you this time...")
+        break
 
 def home():
     while True:
@@ -347,7 +348,7 @@ def home():
         sleep(1)
         print("-'Do you still have my knife?")
         sleep(1)
-        choice_home = input("(Yes or (no)?\n").lower()
+        choice_home = input("(Yes) or (no)?\n").lower()
         sleep(1)
 
         if choice_home == "yes":
@@ -404,11 +405,11 @@ def forest_fight():
             "Do you go (home) or du you continue the (quest)?\n").lower()
         sleep(1)
 
-        if choice_forest_fight == home:
+        if choice_forest_fight == "home":
             sleep(1)
             home()
 
-        elif choice_forest_fight == quest:
+        elif choice_forest_fight == "quest":
             print(
                 "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             print("")
@@ -465,7 +466,7 @@ def leave():
         print("The wolf is hungry and angry. He attacks you!")
         sleep(1)
         choice_wolf = input(
-            "Do you (fight) him of with your knife or do you (run)?") 
+            "Do you (fight) him of with your knife or do you (run)?\n") 
 
         if choice_wolf == "fight":
             sleep(1)
