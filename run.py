@@ -15,7 +15,7 @@ def quiz():
     print("Welcome then, to my impossible quiz....")
     sleep(1)
 
-    playing = input("Do you feel like you can beat me?\n ")
+    playing = input("Do you feel like you can beat me?\n")
     sleep(1)
 
     if playing.lower() != "yes":
@@ -32,7 +32,7 @@ def quiz():
 
     # Questions
     print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
-    answer = input("Let's start up with an easy one...  What's 2 + 2?\n ")
+    answer = input("Let's start up with an easy one...  What's 2 + 2?\n")
     sleep(2)
     if answer == "4":
         print("")
@@ -86,12 +86,13 @@ def quiz():
     else:
         print("")
         print("Nope! Well, unleast you're pretty... ")
+        sleep(2)
         print("The answer was Frodo.")
     sleep(1)
     print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
     
     answerFive = input(
-        "Last question. A simple one... Who's the best?\n ").lower()
+        "Last question. A simple one... Who's the best?\n").lower()
     sleep(2)
     if answerFive == "You" or "Me":
         print("")
@@ -131,6 +132,7 @@ def quiz():
         sleep(2)
         print("The End...")
         sleep(2)
+        end()
     
 
 
@@ -151,99 +153,99 @@ while True:
     else:
         break
 
-sleep(1)
-print("First of all", name, "I must test your mind")
-sleep(2)
-print("before I can let you pass through.")
-sleep(2)
-print("It's an easy test...")
-sleep(2)
-print("All you have to do i guess this simple word.")
-sleep(2)
-print("It's only five letters...")
-sleep(2)
-print("And since I'm such a nice guy, I will let you have 7 guesses...")
-sleep(2)
-print("Good Luck!")
+# sleep(1)
+# print("First of all", name, ", I must test your mind")
+# sleep(2)
+# print("before I can let you pass through.")
+# sleep(2)
+# print("It's an easy test...")
+# sleep(2)
+# print("All you have to do i guess this simple word.")
+# sleep(2)
+# print("It's only five letters...")
+# sleep(2)
+# print("And since I'm such a nice guy, I will let you have 7 guesses...")
+# sleep(2)
+# print("Good Luck!")
 
 
-words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
-word = random.choice(words)
-word = word.upper()
-show_word = list(len(word)*'_')
-guesses = 7
-survive = False
+# words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
+# word = random.choice(words)
+# word = word.upper()
+# show_word = list(len(word)*'_')
+# guesses = 7
+# survive = False
 
 
-def hangman(letter, word):
-    """
-    Function Hangman game to be called at - The talk - beach
-    The game should pick a random word from 'words' list.
-    And the user has 7 guesses to get it right.
-    """
+# def hangman(letter, word):
+#     """
+#     Function Hangman game to be called at - The talk - beach
+#     The game should pick a random word from 'words' list.
+#     And the user has 7 guesses to get it right.
+#     """
 
-    global show_word
-    for i in range(0, len(word)):
-        letter = word[i]
-        if guess == letter:
-            show_word[i] = guess
-    if '_' not in show_word:
-        return True
-    else:
-        return False
-
-
-def status():
-    os.system("clear")
-    print(images.hangman_stages[7-guesses])
-    print(' '.join([str(e) for e in show_word]))
-    sleep(1)
-    print('You have', guesses, 'guess left...')
-    print("")
+#     global show_word
+#     for i in range(0, len(word)):
+#         letter = word[i]
+#         if guess == letter:
+#             show_word[i] = guess
+#     if '_' not in show_word:
+#         return True
+#     else:
+#         return False
 
 
-while survive == False and guesses > 0:
-    status()
-    guess = input("You can guess a letter or the entire word:\n")
-    guess = guess.upper()
+# def status():
+#     os.system("clear")
+#     print(images.hangman_stages[7-guesses])
+#     print(' '.join([str(e) for e in show_word]))
+#     sleep(1)
+#     print('You have', guesses, 'guess left...')
+#     print("")
 
-    if guess == word:
-        survive = True
-        show_word = word
-    elif len(guess) == 1 and guess in word:
-        survive = hangman(guess, word)
-    else:
-        guesses -= 1
-    status()
 
-if survive:
-    print("Well done!")
-    sleep(1)
-    print("I feel confident that you might stand a chance in")
-    sleep(2)
-    print("the upcoming adventure...")
-    sleep(2)
-    print("Here we go!")
-    sleep(2)
-    print("")
-else:
-    print("That's all your guesses...")
-    sleep(2)
-    print("Hmmm, if you can't guess a five letter word,")
-    sleep(2)
-    print("How are going to make it on this impossible andventure?")
-    sleep(2)
-    print("Well... only one way to find out I guess...")
-    sleep(2)
-    print("On you go! God luck", name, "!")
-    sleep(2)
-    print("By the way, the world I was looking for was", word)
-    sleep(2)
-    print("Soooooo easy...!")
-    sleep(1)
-    print("Anyway, here we go!")
-    sleep(2)
-    print("")
+# while survive == False and guesses > 0:
+#     status()
+#     guess = input("You can guess a letter or the entire word:\n")
+#     guess = guess.upper()
+
+#     if guess == word:
+#         survive = True
+#         show_word = word
+#     elif len(guess) == 1 and guess in word:
+#         survive = hangman(guess, word)
+#     else:
+#         guesses -= 1
+#     status()
+
+# if survive:
+#     print("Well done!")
+#     sleep(1)
+#     print("I feel confident that you might stand a chance in")
+#     sleep(2)
+#     print("the upcoming adventure...")
+#     sleep(2)
+#     print("Here we go!")
+#     sleep(2)
+#     print("")
+# else:
+    # print("That's all your guesses...")
+    # sleep(2)
+    # print("Hmmm, if you can't guess a five letter word,")
+    # sleep(2)
+    # print("How are going to make it on this impossible andventure?")
+    # sleep(2)
+    # print("Well... only one way to find out I guess...")
+    # sleep(2)
+    # print("On you go! God luck", name, "!")
+    # sleep(2)
+    # print("By the way, the world I was looking for was", word)
+    # sleep(2)
+    # print("Soooooo easy...!")
+    # sleep(1)
+    # print("Anyway, here we go!")
+    # sleep(2)
+    # print("")
      
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -252,7 +254,9 @@ print("")
 sleep(2)
 print("This is the tale about an exiting journey across the mythical lands of")
 sleep(2)
+print("")
 print("'PythWorld'.")
+print("")
 sleep(2)
 print("You can cross path with some intresting characters")
 sleep(2)
@@ -446,7 +450,7 @@ def leave():
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
-        print("You ignore the mushrooms and star walking.")
+        print("You ignore the mushrooms and start walking.")
         sleep(1)
         print(
             "After a while you notice that you're on a path you never been on before.")
@@ -623,6 +627,7 @@ def sneak_forest_fight():
 
 
 def sneak_pick():
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -657,6 +662,29 @@ def sneak_pick():
             continue
 
 
+def sneak_leave():
+    while True:
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("")
+        sleep(1)
+        print("You ignore the mushrooms and star walking.")
+        sleep(1)
+        print(
+            "After a while you notice that you're on a path you never been on before.")
+        sleep(1)
+        print("Just when you manage to find the edge of the forest you see a wolf.")
+        sleep(1)
+        print("The wolf is hungry and angry. He attacks you!")
+        sleep(1)
+        choice_sneak_leave = input("Do you (run) or du you (fight) him off?\n").lower()
+
+        if choice_sneak_leave == run:
+            run()
+    
+        elif choice_sneak_leave == fight:
+            sneak_forest_fight()
+           
+
 def sneak_beach():
 
     while True:
@@ -681,9 +709,9 @@ def sneak_beach():
         sleep(2)
         print("If not, you come with me. '")
         sleep(2)
-        choice_sneak_beach = input("Are you ready? (Yes) or (no)").lower()
+        choice_sneak_beach = input("Are you ready? (Yes) or (no)\n").lower()
 
-        if _choice_sneak_beach == "yes":
+        if choice_sneak_beach == "yes":
             sleep(2)
             quiz()
 
@@ -694,6 +722,7 @@ def sneak_beach():
             print("")
             sleep(1)
             print("Or would I.....?")
+            
             end()
 
         else:
