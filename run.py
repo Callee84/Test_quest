@@ -126,6 +126,8 @@ def hangman(letter, word):
 def status():
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
+    print("")
+    sleep(1)
     print('You have', guesses, 'guess left...')
 
 
@@ -223,9 +225,11 @@ while True:
         print("You only get this warning. Fail this inside the quest and you lose!")
         sleep(2)
         print("Well okey, maybe not lose... But I will be a bit sad....")
+        sleep(1)
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         continue
 
-print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+
 
 
 
@@ -690,7 +694,7 @@ def sneak():
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
-        print("Nice call... )
+        print("Nice call... ")
         sleep(1)
         print("You were able to dodge the guard and sneek over to the other side.")
         sleep(1)
