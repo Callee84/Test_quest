@@ -79,9 +79,7 @@ sleep(2)
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
 name = ""
-sleep(1)
-print("")
-print("Welcome", name, "!\n")
+
 sleep(1)
 
 while True:
@@ -93,7 +91,7 @@ while True:
     else:
         break
 
-
+sleep(1)
 print("First of all", name, "I must test your mind")
 sleep(2)
 print("before I can let you pass through.")
@@ -166,6 +164,7 @@ if survive:
     sleep(2)
     print("Here we go!")
     sleep(2)
+    print("")
 else:
     print("That's all your guesses...")
     sleep(2)
@@ -183,10 +182,12 @@ else:
     sleep(1)
     print("Anyway, here we go!")
     sleep(2)
+    print("")
      
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+print("")
 sleep(2)
 print("This is the tale about an exiting journey across the mythical lands of")
 sleep(2)
