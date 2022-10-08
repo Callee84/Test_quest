@@ -435,11 +435,16 @@ def forest_fight():
 def run():
     print("Oh no....")
     sleep(2)
-    print("It was a long and hard fight...")
-    sleep(1)
-    print("Well, not really. The wolf ate you within seconds.")
+    print("You really thought you could outrun a wolf?!")
     sleep(2)
-    print("The End...")
+    print("I should never have let you in to this quest!")
+    sleep(2)
+    print("Outrun a wolf.. Ha! You're not Usain Bolt!")
+    sleep(2)
+    print("Yeah, the quest is over for you.")
+    sleep(2)
+    print("The End....")
+    sleep(3)
     end()
 
 
@@ -466,7 +471,7 @@ def leave():
             sleep(1)
             forest_fight()
 
-        elif choice_wolf == run:
+        elif choice_wolf == "run":
             sleep(1)
             run()
 
@@ -678,10 +683,10 @@ def sneak_leave():
         sleep(1)
         choice_sneak_leave = input("Do you (run) or du you (fight) him off?\n").lower()
 
-        if choice_sneak_leave == run:
+        if choice_sneak_leave == "run":
             run()
     
-        elif choice_sneak_leave == fight:
+        elif choice_sneak_leave == "fight":
             sneak_forest_fight()
            
 
