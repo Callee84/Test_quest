@@ -78,11 +78,21 @@ print("Welcome to the Quest!\n")
 sleep(2)
 
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
-name = input("What's your name? \n")
+name = ""
 sleep(1)
 print("")
 print("Welcome", name, "!\n")
 sleep(1)
+
+while True:
+    name = input("What's your name? \n")
+
+    if not name.isalpha():
+        print("You can only use letters...")
+        continue
+    else:
+        break
+
 
 print("First of all", name, "I must test your mind")
 sleep(2)
@@ -91,6 +101,8 @@ sleep(2)
 print("It's an easy test...")
 sleep(2)
 print("All you have to do i guess this simple word.")
+sleep(2)
+print("It's only five letters...")
 sleep(2)
 print("And since I'm such a nice guy, I will let you have 7 guesses...")
 sleep(2)
@@ -126,9 +138,9 @@ def hangman(letter, word):
 def status():
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
-    print("")
     sleep(1)
     print('You have', guesses, 'guess left...')
+    print("")
 
 
 while survive == False and guesses > 0:
@@ -151,6 +163,9 @@ if survive:
     print("I feel confident that you might stand a chance in")
     sleep(2)
     print("the upcoming adventure...")
+    sleep(2)
+    print("Here we go!")
+    sleep(2)
 else:
     print("That's all your guesses...")
     sleep(2)
@@ -166,11 +181,13 @@ else:
     sleep(2)
     print("Soooooo easy...!")
     sleep(1)
-    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+    print("Anyway, here we go!")
+    sleep(2)
      
 
-
-
+print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+sleep(2)
 print("This is the tale about an exiting journey across the mythical lands of")
 sleep(2)
 print("'PythWorld'.")
@@ -182,6 +199,7 @@ sleep(2)
 print("But be aware... your choices has consequences!\n")
 sleep(2)
 print("HINT - Be sure to type in your choosen answer,")
+sleep(2)
 print("which is provided for you in (bracets)")
 sleep(2)
 print("This in important. If you don't do this, you will lose!")
