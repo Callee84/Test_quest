@@ -84,6 +84,90 @@ print("")
 print("Welcome", name, "!\n")
 sleep(1)
 
+print("First of all", name, "I must test your mind")
+sleep(2)
+print("before I can let you pass through.")
+sleep(2)
+print("It's an easy test...")
+sleep(2)
+print("All you have to do i guess this simple word.")
+sleep(2)
+print("And since I'm such a nice guy, I will let you have 7 guesses...")
+sleep(2)
+print("Good Luck!")
+
+
+words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
+word = random.choice(words)
+word = word.upper()
+show_word = list(len(word)*'_')
+guesses = 7
+survive = False
+
+
+def hangman(letter, word):
+    """
+    Function Hangman game to be called at - The talk - beach
+    The game should pick a random word from 'words' list.
+    And the user has 7 guesses to get it right.
+    """
+
+    global show_word
+    for i in range(0, len(word)):
+        letter = word[i]
+        if guess == letter:
+            show_word[i] = guess
+    if '_' not in show_word:
+        return True
+    else:
+        return False
+
+
+def status():
+    print(images.hangman_stages[7-guesses])
+    print(' '.join([str(e) for e in show_word]))
+    print('You have', guesses, 'guess left...')
+
+
+while survive == False and guesses > 0:
+    status()
+    guess = input("You can guess a letter or the entire word:\n")
+    guess = guess.upper()
+
+    if guess == word:
+        survive = True
+        show_word = word
+    elif len(guess) == 1 and guess in word:
+        survive = hangman(guess, word)
+    else:
+        guesses -= 1
+    status()
+
+if survive:
+    print("Well done!")
+    sleep(1)
+    print("I feel confident that you might stand a chance in")
+    sleep(2)
+    print("the upcoming adventure...")
+else:
+    print("That's all your guesses...")
+    sleep(2)
+    print("Hmmm, if you can't guess a five letter word,")
+    sleep(2)
+    print("How are going to make it on this impossible andventure?")
+    sleep(2)
+    print("Well... only one way to find out I guess...")
+    sleep(2)
+    print("On you go! God luck",name,"!")
+    sleep(2)
+    print("By the way, the world I was looking for was", word)
+    sleep(2)
+    print("Soooooo easy...!")
+    sleep(1)
+    print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+     
+
+
 
 print("This is the tale about an exiting journey across the mythical lands of")
 sleep(2)
@@ -104,6 +188,7 @@ sleep(2)
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("")
 sleep(2)
+
 
 
 while True:
@@ -401,7 +486,7 @@ def talk_beach():
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
-        print("You get to the lovely beach and see a man turned away from you.  ")
+        print("You get to the lovely beach and see a man turned away from you.")
         sleep(1)
         print("You say 'Hey mister, what a lovely day', the man turns around and...")
         sleep(1)
@@ -443,59 +528,6 @@ def talk_beach():
             print("Please type you choice of answer or check your spelling...")
             continue
 
-    words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
-    word = random.choice(words)
-    word = word.upper()
-    show_word = list(len(word)*'_')
-    guesses = 7
-    survive = False
-
-
-    def hangman(letter, word):
-        """
-        Function Hangman game to be called at - The talk - beach
-        The game should pick a random word from 'words' list.
-        And the user has 7 guesses to get it right.
-        """
-
-        global show_word
-        for i in range(0, len(word)):
-            letter = word[i]
-            if guess == letter:
-                show_word[i] = guess
-        if '_' not in show_word:
-            return True
-        else:
-            return False
-
-
-    def status():
-        print(images.hangman_stages[7-guesses])
-        print(' '.join([str(e) for e in show_word]))
-        print('You have', guesses, 'guess left...')
-
-
-    while survive == False and guesses > 0:
-        status()
-        guess = input("You can guess a letter or the entire word:\n")
-        guess = guess.upper()
-
-        if guess == word:
-            survive = True
-            show_word = word
-        elif len(guess) == 1 and guess in word:
-            survive = hangman(guess, word)
-        else:
-            guesses -= 1
-        status()
-
-    if survive:
-
-        print("Well done. I have to say you earned your life back!")
-    else:
-        print("That's all your guesses. It's time to come with me...")
-        print("By the way, the world I was looking for was", word)
-        end() 
 
 def sneak_forest_fight():
     while True:
