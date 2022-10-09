@@ -180,6 +180,7 @@ sleep(2)
 print("And since I'm such a nice guy, I will let you have 7 guesses...")
 sleep(2)
 print("Good Luck!")
+sleep(2)
 
 
 words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
@@ -412,6 +413,10 @@ def home():
 
 
 def quest():
+    """
+    Called when unser chooses to continue after fight with wolf.
+    """
+
     print("You start to feel better for a while.")
     sleep(1)
     print("But slowly, as the sun sets,")
@@ -426,8 +431,11 @@ def quest():
 
 
 def forest_fight():
-    while True:
+    """
+    
+    """
 
+    while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
@@ -744,7 +752,7 @@ def sneak_leave():
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(2)
-        print("You ignore the mushrooms and star walking.")
+        print("You ignore the mushrooms and start walking.")
         sleep(2)
         print("After a while you notice that")
         sleep(2)
