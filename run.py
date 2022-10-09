@@ -393,7 +393,7 @@ def home():
             sleep(1)
             print("As a reward you have earned this treasure!")
             sleep(2)
-            print(" Follow this path back and you'll be back home in notime!")
+            print("Follow this path back and you'll be back home in notime!")
             sleep(2)
             end()
             break
@@ -594,7 +594,7 @@ def pick():
         sleep(2)
         print("or du you try to (lure) him of")
         sleep(2)
-        talk_forest_pick = input(" with some mushrooms?\n").lower()
+        talk_forest_pick = input("with some mushrooms?\n").lower()
 
         if talk_forest_pick == "fight":
             sleep(1)
