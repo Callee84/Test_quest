@@ -776,6 +776,11 @@ def sneak_pick():
 
 
 def sneak_leave():
+    """
+    Function is activated through forest choice and with in this function
+    the choice is functions run and fight.
+    """
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -810,6 +815,10 @@ def sneak_leave():
 
 
 def sneak_beach():
+    """
+    This function opens up the choice to take the quiz.
+    Also avalible choice inse is to end.
+    """
 
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -858,6 +867,10 @@ def sneak_beach():
 
 
 def sneak_forest():
+    """
+    This function ia activated though the forest choice in sneak mode. Opens the 
+    choice of pick or leave - functions.
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -889,6 +902,10 @@ def sneak_forest():
 
 
 def the_talk():
+    """
+    Thi function is activated when choosing talk in the opening choice at the
+    start of the quest.
+    """
 
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -923,6 +940,10 @@ def the_talk():
 
 
 def sneak():
+    """
+    The sneak function is the first funciton to be able to activte along with talk
+    in start of the quest.
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -987,19 +1008,3 @@ while True:
         sleep(1)
         print("Remember, the options you have are inside (brackets).")
         continue
-
-
-# print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-# print("")
-# sleep(1)
-# print("So, how did you do?")
-# sleep(2)
-# print("Did you have to answer some hard questions?")
-# sleep(2)
-# print("Did you get the treasure?")
-# sleep(2)
-# print("Or did you even became a god?")
-# sleep(2)
-# print("Maybe you wish you've picked some other answers?")
-# sleep(2)
-# print("Well, play again and see where the quest will take you this time...")
