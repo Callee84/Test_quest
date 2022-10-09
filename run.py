@@ -122,6 +122,7 @@ def quiz():
         sleep(2)
         print("The End....")
         sleep(2)
+        end()
 
     else:
         print("As I thought... ")
@@ -361,6 +362,7 @@ def home():
                 "this treasure! Follow this path back and you'll be back home in notime!")
             sleep(2)
             end()
+            break
 
         elif choice_home == "no":
             sleep(1)
@@ -371,6 +373,7 @@ def home():
             print("All the best!")
             sleep(2)
             end()
+            break
 
 
 def quest():
@@ -382,10 +385,11 @@ def quest():
     sleep(1)
     print("You are lost and without food.")
     sleep(1)
-    print("You lie down and close your eyes....")
+    print("You lie down and close your eyes....\n")
     sleep(2)
     print("The End...")
-    end()
+    
+    
 
 
 def forest_fight():
@@ -407,6 +411,7 @@ def forest_fight():
         if choice_forest_fight == "home":
             sleep(1)
             home()
+            break
 
         elif choice_forest_fight == "quest":
             print(
@@ -419,11 +424,12 @@ def forest_fight():
             sleep(1)
             print("You see a man appears out of nowhere. He says")
             sleep(1)
-            print("-'Hello", name, "'I'm death. It's time to come with me..")
+            print("-'Hello", name, "'I'm death. It's time to come with me...\n")
             sleep(2)
             print("The End.....")
             sleep(2)
             end()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -441,11 +447,12 @@ def run():
     sleep(2)
     print("Outrun a wolf.. Ha! You're not Usain Bolt!")
     sleep(2)
-    print("Yeah, the quest is over for you.")
+    print("Yeah, the quest is over for you.\n")
     sleep(2)
     print("The End....")
     sleep(3)
     end()
+    
 
 
 def leave():
@@ -470,10 +477,12 @@ def leave():
         if choice_wolf == "fight":
             sleep(1)
             forest_fight()
+            break
 
         elif choice_wolf == "run":
             sleep(1)
             run()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -502,6 +511,7 @@ def lure():
         print("The End...")
         sleep(1)
         end()
+        break
 
 
 def pick():
@@ -527,10 +537,12 @@ def pick():
         if talk_forest_pick == "fight":
             sleep(1)
             forest_fight()
+            break
         
         elif talk_forest_pick == "lure":
             sleep(1)
             lure()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -556,10 +568,12 @@ def forest():
         if choice_forest == "pick":
             sleep(1)
             pick()
+            break
 
         elif choice_forest == "leave":
             sleep(1)
             leave()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -592,6 +606,7 @@ def talk_beach():
         if beach_choice == "yes":
             sleep(2)
             quiz()
+            break
 
         elif beach_choice == "no":
             sleep(2)
@@ -608,6 +623,7 @@ def talk_beach():
             sleep(2)
             print("The End")
             end()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -629,6 +645,7 @@ def sneak_forest_fight():
         print("The End....")
         sleep(1)
         end()
+        break
 
 
 def sneak_pick():
@@ -655,10 +672,12 @@ def sneak_pick():
         if sneak_forest_pick == "fight":
             sleep(1)
             sneak_forest_fight()
+            break
         
         elif sneak_forest_pick == "lure":
             sleep(1)
             lure()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -685,10 +704,16 @@ def sneak_leave():
 
         if choice_sneak_leave == "run":
             run()
+            break
     
         elif choice_sneak_leave == "fight":
             sneak_forest_fight()
-           
+            break
+        
+        else:
+            print("Remember, the options you have are inside (brackets).")
+            continue
+
 
 def sneak_beach():
 
@@ -719,6 +744,7 @@ def sneak_beach():
         if choice_sneak_beach == "yes":
             sleep(2)
             quiz()
+            break
 
         elif choice_sneak_beach == "no":
             sleep(1)
@@ -727,8 +753,8 @@ def sneak_beach():
             print("")
             sleep(1)
             print("Or would I.....?")
-            
             end()
+            break
 
         else:
             print("Remember, the options you have are inside (brackets).")
@@ -752,10 +778,12 @@ def sneak_forest():
         if choice_forest_sneak == "pick":
             sleep(1)
             sneak_pick()
+            break
 
         elif choice_forest_sneak == "leave":
             sleep(1)
             sneak_leave()
+            break
 
         else:
             print("No, no, NO! Remember the (brackets)?")
@@ -785,10 +813,12 @@ def the_talk():
         if talk_choice == "beach":
             sleep(1)
             talk_beach()
+            break
 
         elif talk_choice == "forest":
             sleep(1)
             forest()
+            break
 
         else:
             print("Remember, the options you have are inside (brackets).")
@@ -813,10 +843,12 @@ def sneak():
         if choice_sneak == "beach":
             sleep(1)
             sneak_beach()
+            break
 
         elif choice_sneak == "forest":
             sleep(1)
             sneak_forest()
+            break
 
         else:
             print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -845,10 +877,12 @@ while True:
     if choiceOne == "talk":
         sleep(1)
         the_talk()
+        break
 
     elif choiceOne == "sneak":
         sleep(1)
         sneak()
+        break
 
     else:
         print("That's not an option.")
