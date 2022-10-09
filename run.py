@@ -178,9 +178,9 @@ sleep(2)
 print("It's only five letters...")
 sleep(2)
 print("And since I'm such a nice guy, I will let you have 7 guesses...")
-sleep(2)
+sleep(3)
 print("Good Luck!")
-sleep(2)
+sleep(3)
 
 
 words = ["sunny", "beach", "river", "enter", "quest", "sneak"]
@@ -219,7 +219,6 @@ def status():
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
     print('You have', guesses, 'guess left...')
-    sleep(1)
     print("")
 
 
@@ -245,8 +244,9 @@ if survive:
     print("the upcoming adventure...")
     sleep(2)
     print("Here we go!")
-    sleep(2)
     print("")
+    sleep(3)
+    
 else:
     print("That's all your guesses...")
     sleep(2)
@@ -261,9 +261,9 @@ else:
     print("By the way, the world I was looking for was", word)
     sleep(2)
     print("Soooooo easy...!")
-    sleep(1)
-    print("Anyway, here we go!")
     sleep(2)
+    print("Anyway, here we go!")
+    sleep(3)
     print("")
 
 
@@ -961,7 +961,7 @@ while True:
     print(("He looks quite big and almost dangeorus from this far out."))
     sleep(2)
     choiceOne = input(
-        "Do you (talk) to the guard or du you try to (sneak) past? \n").lower()
+        "Do you (talk) to the guard or du you try to (sneak) past?\n").lower()
 
     if choiceOne == "talk":
         sleep(1)
@@ -980,17 +980,17 @@ while True:
         continue
 
 
-print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-print("")
-sleep(1)
-print("So, how did you do?")
-sleep(2)
-print("Did you have to answer some hard questions?")
-sleep(2)
-print("Did you get the treasure?")
-sleep(2)
-print("Or did you even became a god?")
-sleep(2)
-print("Maybe you wish you've picked some other answers?")
-sleep(2)
-print("Well, play again and see where the quest will take you this time...")
+# print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+# print("")
+# sleep(1)
+# print("So, how did you do?")
+# sleep(2)
+# print("Did you have to answer some hard questions?")
+# sleep(2)
+# print("Did you get the treasure?")
+# sleep(2)
+# print("Or did you even became a god?")
+# sleep(2)
+# print("Maybe you wish you've picked some other answers?")
+# sleep(2)
+# print("Well, play again and see where the quest will take you this time...")
