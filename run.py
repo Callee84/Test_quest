@@ -729,14 +729,19 @@ def sneak_leave():
         sleep(2)
         print("You ignore the mushrooms and star walking.")
         sleep(2)
-        print(
-            "After a while you notice that you're on a path you never been on before.")
+        print("After a while you notice that")
         sleep(2)
-        print("Just when you manage to find the edge of the forest you see a wolf.")
+        print("you're on a path you never been on before.")
+        sleep(2)
+        print("Just when you manage to find the edge of the forest")
+        sleep(2)
+        print("you see a wolf!")
         sleep(2)
         print("The wolf is hungry and angry. He attacks you!")
         sleep(2)
-        choice_sneak_leave = input("Do you (run) or du you (fight) him off?\n").lower()
+        print("Do you (run)")
+        sleep(2)
+        choice_sneak_leave = input("or du you (fight) him off?\n").lower()
 
         if choice_sneak_leave == "run":
             run()
@@ -754,12 +759,14 @@ def sneak_leave():
 def sneak_beach():
 
     while True:
-        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
         print("You get to the lovely beach and see a the back of a man.  ")
         sleep(1)
-        print("You say 'Hey mister, what a lovely day', the man turns around and...")
+        print("You say 'Hey mister, what a lovely day'.")
+        sleep(2)
+        print("the man turns around and...")
         sleep(2)
         print("IT'S DEATH HIMSELF!!! He says, ")
         sleep(2)
@@ -783,11 +790,11 @@ def sneak_beach():
             break
 
         elif choice_sneak_beach == "no":
-            sleep(1)
-            print("Well then.. A smart choice. I wouldn't have let you go either way.")
-            sleep(1)
-            print("")
-            sleep(1)
+            sleep(2)
+            print("Well then.. A smart choice.")
+            sleep(2)
+            print("I wouldn't have let you go either way.")
+            sleep(2)
             print("Or would I.....?")
             end()
             break
@@ -799,7 +806,7 @@ def sneak_beach():
 
 def sneak_forest():
     while True:
-        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
         print("You reach the forest and you come across some mushrooms.")
@@ -831,7 +838,7 @@ def sneak_forest():
 def the_talk():
 
     while True:
-        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
         print("The guard seems to be in a good mood today and let you pass.")
@@ -864,15 +871,17 @@ def the_talk():
 
 def sneak():
     while True:
-        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+        print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
-        sleep(1)
+        sleep(2)
         print("Nice call... ")
-        sleep(1)
-        print("You were able to dodge the guard and sneek over to the other side.")
-        sleep(1)
+        sleep(2)
+        print("You were able to dodge the guard")
+        sleep(2)
+        print("and sneek over to the other side.")
+        sleep(2)
         print("If you look to the right it's a nice (beach)")
-        sleep(1)
+        sleep(2)
         print("and to your left there is a (forest).")
         choice_sneak = input("Where do you go from here?\n")
 
@@ -887,13 +896,13 @@ def sneak():
             break
 
         else:
-            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             sleep(1)
             print("That's not an option.")
             sleep(1)
             print("Remember, the options you have are inside (brackets).")
             sleep(1)
-            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+            print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
             continue
 
 
