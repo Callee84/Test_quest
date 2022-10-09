@@ -651,6 +651,9 @@ def forest():
 
 
 def talk_beach():
+    """
+    This function is called when choosing the talk alternetive anf choose beach
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
         print("")
@@ -709,8 +712,11 @@ def talk_beach():
 
 
 def sneak_forest_fight():
+    """
+    Function when choosing fight the wolf inside the sneak choice.
+    """
+    
     while True:
-
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
         sleep(1)
@@ -725,7 +731,10 @@ def sneak_forest_fight():
 
 
 def sneak_pick():
-
+    """
+    Fuction is called when choosing to pick up mushrooms in forest via sneak.
+    Opens up to choose fight pch lure.
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
