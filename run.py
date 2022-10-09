@@ -672,18 +672,21 @@ def talk_beach():
         sleep(2)
         print("But since it's such a lovely day as you say it is,")
         sleep(2)
-        print("I will give you a second chance on life. ")
+        print("I will give you two options.")
         sleep(2)
-        print("Just guess this five letter word.' ")
+        print("(One) you come with me.")
         sleep(2)
-        beach_choice = input("Are you ready? (Yes) or (no) \n").lower()
+        print("or (two) you answer five simple questions.")
+        sleep(2)
+        print("And if you get 4 answers right, I let you go.")
+        beach_choice = input("What do you choose? (One) or (two)?\n").lower()
 
-        if beach_choice == "yes":
+        if beach_choice == "two":
             sleep(2)
             quiz()
             break
 
-        elif beach_choice == "no":
+        elif beach_choice == "one":
             sleep(2)
             print("Death says")
             sleep(1)
@@ -868,8 +871,8 @@ def sneak_beach():
 
 def sneak_forest():
     """
-    This function ia activated though the forest choice in sneak mode. Opens the 
-    choice of pick or leave - functions.
+    This function ia activated though the forest choice in sneak mode. Opens 
+    the choice of pick or leave - functions.
     """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
@@ -941,8 +944,8 @@ def the_talk():
 
 def sneak():
     """
-    The sneak function is the first funciton to be able to activte along with talk
-    in start of the quest.
+    The sneak function is the first funciton to be able to activte along with 
+    talk in start of the quest.
     """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
