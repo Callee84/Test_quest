@@ -1,10 +1,8 @@
 import random
-import images
 from time import sleep
+import images
 import os
 
-
-# defining the quiz for use under - Sneak - beach
 
 def quiz():
     """
@@ -147,7 +145,7 @@ _________          _______    _______           _______  _______ _________
    | |   | (   ) || (        | | /\| || |   | || (            ) |   | |   
    | |   | )   ( || (____/\  | (_\ \ || (___) || (____/\/\____) |   | |   
    )_(   |/     \|(_______/  (____\/_)(_______)(_______/\_______)   )_(   
-                                                                          
+                                                                        
 
 """)
 sleep(2)
@@ -173,7 +171,7 @@ print("before I can let you pass through.")
 sleep(2)
 print("It's an easy test...")
 sleep(2)
-print("All you have to do i guess this simple word.")
+print("All you have to do, is guess this simple word.")
 sleep(2)
 print("It's only five letters...")
 sleep(2)
@@ -218,7 +216,7 @@ def status():
     os.system("clear")
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
-    print('You have', guesses, 'guess left...')
+    print('You have', guesses, 'guesses left...')
     print("")
 
 
@@ -246,7 +244,7 @@ if survive:
     print("Here we go!")
     print("")
     sleep(3)
-    
+
 else:
     print("That's all your guesses...")
     sleep(2)
@@ -283,6 +281,7 @@ print("and you will have to make some hard choices along your choosen path.")
 sleep(2)
 print("But be aware... your choices has consequences!\n")
 sleep(2)
+print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 print("HINT - Be sure to type in your choosen answer,")
 sleep(2)
 print("which is provided for you in (bracets)")
@@ -355,7 +354,7 @@ def end():
         sleep(2)
         print("Well, play again and maybe choose a differnet path.")
         sleep(2)
-        print("You might end up somewhere else?")
+        print("You might end up somewhere else...")
         break
 
 
@@ -480,7 +479,7 @@ def forest_fight():
 
 
 def run():
-    """ 
+    """
     The run function come into play when the user comes across the
     wolf in the forest.
     """
@@ -718,7 +717,7 @@ def sneak_forest_fight():
     """
     Function when choosing fight the wolf inside the sneak choice.
     """
-    
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -871,7 +870,7 @@ def sneak_beach():
 
 def sneak_forest():
     """
-    This function ia activated though the forest choice in sneak mode. Opens 
+    This function ia activated though the forest choice in sneak mode. Opens
     the choice of pick or leave - functions.
     """
     while True:
@@ -944,7 +943,7 @@ def the_talk():
 
 def sneak():
     """
-    The sneak function is the first funciton to be able to activte along with 
+    The sneak function is the first funciton to be able to activte along with
     talk in start of the quest.
     """
     while True:
