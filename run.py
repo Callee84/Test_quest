@@ -10,6 +10,8 @@ def quiz():
     """
     This function is a quiz which is called in the in the Quest '
     under - Sneak - beach
+    The user should print their answer an and at the end their
+    giving score is presented.
     """
 
     print("Welcome then, to my impossible quiz....")
@@ -207,6 +209,11 @@ def hangman(letter, word):
 
 
 def status():
+    """
+    Displays hangman images and which letters that the user
+    has guessed right and how many letters that is left.
+    """
+
     os.system("clear")
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
@@ -327,6 +334,10 @@ while True:
 
 
 def end():
+    """
+    This funciton is called when the user har reached
+    the end of the journey.
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -348,6 +359,12 @@ def end():
 
 
 def home():
+    """
+    This function is called when the user is heading home from
+    the quest. Only reachable from lureing wolf away and one
+    of the wolf fights.
+    """
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
         print("")
