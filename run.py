@@ -60,10 +60,10 @@ def quiz():
     sleep(1)
     print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
 
-    answerThree = input(
+    answer_three = input(
         "What was to the left of the bridge you just passed?\n").lower()
     sleep(2)
-    if answerThree == "beach":
+    if answer_three == "beach":
         print("")
         print("Okey, that's right. But here comes some harder questions! ")
         score += 1
@@ -77,8 +77,8 @@ def quiz():
     print("I hope you know you Lord of the rings...")
     sleep(1)
     print("What was the name of the hobbit")
-    answerFour = input("who took the ring to Mordor? \n").lower()
-    if answerFour == "frodo":
+    answer_four = input("who took the ring to Mordor? \n").lower()
+    if answer_four == "frodo":
         print("")
         print("Hmmm, still easy questions. Don't get cocky!")
         score += 1
@@ -90,10 +90,10 @@ def quiz():
     sleep(1)
     print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
 
-    answerFive = input(
+    answer_five = input(
         "Last question. A simple one... Who's the best?\n").lower()
     sleep(2)
-    if answerFive == "You" or "Me":
+    if answer_five == "You" or "Me":
         print("")
         print("I'm going to take your answer as you mean me...")
         sleep(2)
