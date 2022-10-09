@@ -218,8 +218,8 @@ def status():
     os.system("clear")
     print(images.hangman_stages[7-guesses])
     print(' '.join([str(e) for e in show_word]))
-    sleep(1)
     print('You have', guesses, 'guess left...')
+    sleep(1)
     print("")
 
 
@@ -432,7 +432,7 @@ def quest():
 
 def forest_fight():
     """
-    
+    After you fight of the wolf you get one of three chances to go home again."
     """
 
     while True:
@@ -480,6 +480,11 @@ def forest_fight():
 
 
 def run():
+    """ 
+    The run function come into play when the user comes across the
+    wolf in the forest.
+    """
+
     print("Oh no....")
     sleep(2)
     print("You really thought you could outrun a wolf?!")
@@ -536,6 +541,11 @@ def leave():
 
 
 def lure():
+    """
+    Just like the run function the functions activates when you choose
+    to lure teh wolf in the forest"
+    """
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -559,6 +569,10 @@ def lure():
 
 
 def pick():
+    """
+    This funciton is called when the user chooses to pick up
+    the mushrooms in the forest.
+    """
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
@@ -601,6 +615,11 @@ def pick():
 
 
 def forest():
+    """
+    This function is called when the player chooses to go to the forest
+    after choosing the talk options who comes before inside the quest.
+    """
+
     while True:
         print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
         print("")
